@@ -7,7 +7,7 @@ program test
     print*,"Institution     : Universitas Indonesia"
     print*,"                  Department of Physics - Faculty of Mathematics and Natural Sciences"
     print*,"Research Group  : Theoretical & Computational Condensed Matter Physics"
-    print*,"Copyrights 2020"
+    print*,"Copyright 2020 all rights reserved"
     print*,""
 
     open(1, file='kmesh.dat', action='read') ! Make sure to erase 'K_POINTS crystal' or anything of the sort from the first line AND Numbers of k-points from the second line
