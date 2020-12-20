@@ -21,7 +21,7 @@ program test
     open(5, file='kpoints(-kx,-ky).dat', action='write')
 
 
-    do i = 1,10000 ! i = 1, N (Numbers of k-points)
+    do i = 1, 10000 ! do i = 1, N (Numbers of k-points)
         read(1,*) kx(i) , ky(i) , kz(i) , a(i)
         write(2,*) kx(i)*1, ky(i)*1, kz(i), a(i) ! kx, ky (No Translation)
         write(3,*) kx(i)*(-1), ky(i)*(1), kz(i), a(i) ! -kx, ky (Translation from kx to -kx)
