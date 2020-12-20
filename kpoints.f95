@@ -17,7 +17,7 @@ program test
         write(2,*) kx(i)*1 , ky(i)*1 , kz(i), a(i) ! kx, ky (No Translation)
         write(3,*) kx(i)*(-1) , ky(i)*(1) , kz(i), a(i) ! -kx, ky (Translation from kx to -kx)
         write(4,*) kx(i)*(1) , ky(i)*(-1) , kz(i), a(i) ! kx, -ky (Translation from ky to -ky)
-        write(5,*) kx(i)*(-1) , ky(i)*(-1) , kz(i), a(i) ! -kx, ky (Translation to all k-space)
+        write(5,*) kx(i)*(-1) , ky(i)*(-1) , kz(i), a(i) ! -kx, ky (Translation to all k-points in the reduced Brilloun Zone)
     end do
 
 end program
